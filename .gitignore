@@ -1,6 +1,4 @@
-/PullToRefreshListView/bin/Debug
-/PullToRefreshListView/bin/Release
-/PullToRefreshListView/obj/Debug
-/PullToRefreshListView/obj/Release
+/PullToRefreshListView/bin/*
+/PullToRefreshListView/obj/*
 /*.suo
 /PullToRefreshListView/*.user
