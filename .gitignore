@@ -1,0 +1,6 @@
+/PullToRefreshListView/bin/Debug
+/PullToRefreshListView/bin/Release
+/PullToRefreshListView/obj/Debug
+/PullToRefreshListView/obj/Release
+/*.suo
+/PullToRefreshListView/*.user
