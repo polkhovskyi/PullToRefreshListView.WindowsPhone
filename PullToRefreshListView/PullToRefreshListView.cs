@@ -40,7 +40,7 @@ namespace Custom.Controls
         private bool isCompressionTimerRunning;
         private bool isReadyToRefresh;
 
-        private double offsetTreshhold = 40;
+        //private double offsetTreshhold = 40;
         private Border pullToRefreshIndicator;
         private ScrollViewer scrollViewer;
         private DispatcherTimer timer;
@@ -49,6 +49,15 @@ namespace Custom.Controls
         {
             this.DefaultStyleKey = typeof (PullToRefreshListView);
             Loaded += PullToRefreshScrollViewer_Loaded;
+        }
+
+        public static readonly DependencyProperty CommandExecutionOffsetProperty = DependencyProperty.Register(
+            "CommandExecutionOffset", typeof (double), typeof (PullToRefreshListView), new PropertyMetadata(default(double)));
+
+        public double CommandExecutionOffset
+        {
+            get { return (double) GetValue(CommandExecutionOffsetProperty); }
+            set { SetValue(CommandExecutionOffsetProperty, value); }
         }
 
         public ICommand RefreshCommand
@@ -201,7 +210,7 @@ namespace Custom.Controls
                         .TransformBounds(new Rect(0.0, 0.0, pullToRefreshIndicator.Height, RefreshHeaderHeight));
                 var compressionOffset = elementBounds.Bottom;
 
-                if (compressionOffset > offsetTreshhold)
+                if (compressionOffset > CommandExecutionOffset)
                 {
                     if (isCompressionTimerRunning == false)
                     {
