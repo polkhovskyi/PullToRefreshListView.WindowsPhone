@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>PullToRefreshListView</id>
+        <version>1.0.0</version>
+        <title>PullToRefreshListView</title>
+        <authors>Anton Polkhovskyi</authors>
+        <projectUrl>https://github.com/polkhovskyi/PullToRefreshListView.WindowsPhone</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Simple implementation of Pull to refresh ListView for Windows Phone.</description>
+    </metadata>
+    <files>
+        <file src="bin\Release\Custom.Controls.PullToRefreshListView\Themes\Generic.xaml" target="lib\wpa81\Custom.Controls.PullToRefreshListView\Themes\Generic.xaml" />
+        <file src="bin\Release\Custom.Controls.PullToRefreshListView\Themes\Generic.xbf" target="lib\wpa81\Custom.Controls.PullToRefreshListView\Themes\Generic.xbf" />
+        <file src="bin\Release\Custom.Controls.PullToRefreshListView\Custom.Controls.PullToRefreshListView.xr.xml" target="lib\wpa81\Custom.Controls.PullToRefreshListView\Custom.Controls.PullToRefreshListView.xr.xml" />
+        <file src="bin\Release\Custom.Controls.PullToRefreshListView.dll" target="lib\wpa81\Custom.Controls.PullToRefreshListView.dll" />
+        <file src="bin\Release\Custom.Controls.PullToRefreshListView.pri" target="lib\wpa81\Custom.Controls.PullToRefreshListView.pri" />
+    </files>
+</package>
