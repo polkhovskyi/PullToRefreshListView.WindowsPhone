@@ -13,3 +13,4 @@ This project is cut to be only Windows Phone version and is published to Nuget.
 
 By default arrow color is set to PhoneAccentBrush and text color is set to is PhoneForegroundBrush;
 
+Grab it from nuget: https://www.nuget.org/packages/PullToRefreshListView/
